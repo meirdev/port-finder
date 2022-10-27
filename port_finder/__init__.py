@@ -25,4 +25,4 @@ def port_finder(start: int, end: int = HIGHEST_PORT, host: str = LOCALHOST) -> i
             else:
                 return port
 
-    raise PortFinderNotFoundError("No open port found in the given range.")
+    raise PortFinderNotFoundError("No free port was found in the given range.")
